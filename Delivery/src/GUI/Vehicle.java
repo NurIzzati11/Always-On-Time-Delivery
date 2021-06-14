@@ -1,18 +1,25 @@
+package GUI;
+
 import java.util.LinkedList;
 
 public class Vehicle {
     protected int capacity;
     private double cost;
-    protected LinkedList<Customer> path;
+    private LinkedList<Customer> path;
+    
 
     public Vehicle(int capacity) {
         this.capacity = capacity;
     }
-
+    
     public Vehicle(LinkedList<Customer> path, double cost, int capacity) {
         this.capacity = capacity;
         this.path = (LinkedList<Customer>) path.clone();
         this.cost = cost;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
     public int getCapacity() {
@@ -36,6 +43,5 @@ public class Vehicle {
         sb.append(0);
         return sb + "\nCapacity: " + capacity + "\nCost: " + cost;
     }
-    
     
 }

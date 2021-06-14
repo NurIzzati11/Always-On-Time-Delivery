@@ -1,3 +1,5 @@
+package GUI;
+
 import java.util.ArrayList;
 
 public class GreedySearch {
@@ -112,7 +114,7 @@ public class GreedySearch {
             System.out.println("Cost: " + cost.get(i));
         }
     }
-    
+
     @Override
     public String toString() {
         String s = "~Greedy Simulation~\nTour\n";
